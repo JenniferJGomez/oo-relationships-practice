@@ -12,13 +12,14 @@ class Desserts
     end
 
     def ingredients
-    # - #ingredients
-    #   - should return an array of ingredients for the dessert
+        # - #ingredients
+        #   - should return an array of ingredients for the dessert
+        Ingredients.all.collect {|ingredients| ingredients.dessert}
     end
 
     def bakery 
-    # - #bakery
-    #   - should return the bakery object for the dessert
+        # - #bakery
+        #   - should return the bakery object for the dessert
     end
 
     def calories
@@ -27,8 +28,6 @@ class Desserts
     end
 
     def self.all
-    # - .all
-    #   - should return an array of all desserts
         @@all
     end
 

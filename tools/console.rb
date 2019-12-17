@@ -1,14 +1,11 @@
 require_relative '../config/environment.rb'
-require_relative './bakery.rb'
-require_relative './desserts.rb'
-require_relative './ingredients.rb'
 require 'pry'
 
 def reload
   load 'config/environment.rb'
 end
 
-binding.pry
+#binding.pry
 0
 
 
@@ -35,4 +32,3 @@ bakery1 = Bakery.new("Bakery 1", cake)
 bakery2 = Bakery.new("Bakery 2", cookies)
 bakery3 = Bakery.new("Bakery 3", truffles)
 
-bakery1.ingredients
